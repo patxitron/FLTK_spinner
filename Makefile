@@ -2,7 +2,7 @@ PROJECT_DIR = $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 COMPILER_PREFIX :=
 STRIP = $(COMPILER_PREFIX)strip
 STRIPFLAGS = --strip-all
-CXXFLAGS = -std=c++14 -pedantic -fmessage-length=0 `fltk-config --cxxflags`
+CXXFLAGS = -std=c++14 -pedantic -fmessage-length=0 `fltk-config --cxxflags` -D USE_UINT_SPINNER
 OPTFLAGS = -O2
 DBGFLAGS = -O0 -g -DDEBUG
 LDFLAGS =

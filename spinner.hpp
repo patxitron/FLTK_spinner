@@ -23,7 +23,7 @@ public:
 
     Spinner(int x, int y, size_t val=0);
 
-    size_t value() const {return static_cast<size_t>(value_->label()[0] - '0');}
+    size_t value() const {return static_cast<size_t>(value_->index(0) - '0');}
     void value(size_t val);
     size_t increment();
     size_t decrement();
